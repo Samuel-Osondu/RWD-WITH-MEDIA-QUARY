@@ -2,13 +2,29 @@
     "name": "Safety Engineer",
     "version": "0.1.0",
     "homepage": "https://Samuel-Osondu.github.io/RWD-WITH-MEDIA-QUARY",
-    "private": "true",
+    "private": true,
     "script":{
-        "deploy": "gh-pages -d build",
-        "dev": "nodemon start"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "dev": "nodemon start"
+        
     },
 
-    "dependencies": {
-        "gh-pages": "6.1.1"
+    "browserslist": {
+        "production": [
+            ">0.25%",
+            "not dead",
+            "not op_mini all"
+        ],
+
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+
+    "devdependencies": {
+        
     }
 }
